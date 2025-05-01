@@ -1,43 +1,33 @@
 
-window.addEventListener("load", () => {
-    alert("Bienvenue sur mon portfolio ! N’hésitez pas à me contacter.");
-  });
-  
 
-  document.addEventListener("DOMContentLoaded", () => {
-    const header = document.querySelector("header");
-    header.style.opacity = 0;
-    header.style.transition = "opacity 2s";
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleButton = document.getElementById('theme-toggle');
+  const body = document.body;
+
+
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    body.classList.add('dark');
+  }
+
+
+  toggleButton.addEventListener('click', () => {
+    body.classList.toggle('dark');
+    if (body.classList.contains('dark')) {
+      localStorage.setItem('theme', 'dark');
+    } else {
+      localStorage.setItem('theme', 'light');
+    }
+  });
+
+
+  const bars = document.querySelectorAll('.bar');
+  bars.forEach(bar => {
+    const width = bar.style.width;
+    bar.style.width = '0';
     setTimeout(() => {
-      header.style.opacity = 1; 
-    }, 500);
-  
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute("href"));
-        if (target) {
-          target.scrollIntoView({ behavior: "smooth" });
-        }
-      });
-    });
+      bar.style.transition = 'width 1.5s ease-in-out';
+      bar.style.width = width;
+    }, 300);
   });
-  
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const toggle = document.getElementById("themeToggle");
-  
-    toggle.addEventListener("click", () => {
-      document.body.classList.toggle("dark-mode");
-  
-      
-      if (document.body.classList.contains("dark-mode")) {
-        toggle.textContent = "🌙";
-      } else {
-        toggle.textContent = "🌞";
-      }
-    });
-  });
-  
-  
+});

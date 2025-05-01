@@ -1,81 +1,94 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon portolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Kasongo Badinga Exauce Moïse</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div class="container center">
-            <img src="Kass.JPG" alt="Photo de Kass" class="profile-photo">
-            <h1>Kassongo Exaucé Moïse</h1>
-            <p>Développeur Web & Mobile</p>
+  <header>
+    <h1>Kasongo Badinga Exauce Moïse</h1>
+    <button class="theme-toggle" id="theme-toggle">🌞</button>
+  </header>
 
-            <button id="themeToggle">Changer de thème</button>
-        </div>
-    </header>
+  <section class="hero">
+    <div class="hero-text">
+      <h2> Je suis un Developpeur web et mobile, Je transforme des idées en solutions web et mobiles performantes 💡</h2>
+      <a href="#contact" class="btn">Me contacter</a>
+    </div>
+    <img src="Kass.JPG" alt="Ma photo" class="profile-pic">
+  </section>
 
-    <main class="container">
-        <section>
-            <h2>Identité</h2>
-            <ul>
-                <li><strong>Nom :</strong> KASONGO</li>
-                <li><strong>Post-nom :</strong> BADINGA</li>
-                <li><strong>Prénom :</strong> Exaucé Moïse</li>
-                <li><strong>Date de naissance :</strong> 07/01/2001 à Brazzaville</li>
-                <li><strong>Nationalité :</strong> Congolaise</li>
-                <li><strong>Adresse :</strong> 1030 Av/Mujinga, Q/Cadele, C/Manika</li>
-                <li><strong>Téléphone :</strong> +243 994 668 789</li>
-                <li><strong>Email :</strong> <a href="mailto:kassexauce@gmail.com">kassexauce@gmail.com</a></li>
-                <li><strong>État civil :</strong> Célibataire</li>
-            </ul> 
-        </section>
+  <section class="skills">
+    <h2>Compétences</h2>
+    <div class="skills-grid">
+      <div class="skill">
+        <p>HTML <span class="percentage">90%</span></p>
+        <div class="bar" style="width:95%"></div>
+      </div>
+      <div class="skill">
+        <p>CSS <span class="percentage">55%</span></p>
+        <div class="bar" style="width:90%"></div>
+      </div>
+      <div class="skill">
+        <p>JavaScript <span class="percentage">65%</span></p>
+        <div class="bar" style="width:85%"></div>
+      </div>
+      <div class="skill">
+        <p>Ruby <span class="percentage">80%</span></p>
+        <div class="bar" style="width:80%"></div>
+      </div>
+      <div class="skill">
+        <p>Ruby on Rails <span class="percentage">75%</span></p>
+        <div class="bar" style="width:75%"></div>
+      </div>
+      <div class="skill">
+        <p>Node.js <span class="percentage">60%</span></p>
+        <div class="bar" style="width:70%"></div>
+      </div>
+      <div class="skill">
+        <p>Python <span class="percentage">65%</span></p>
+        <div class="bar" style="width:85%"></div>
+      </div>
+      <div class="skill">
+        <p>PHP <span class="percentage">75%</span></p>
+        <div class="bar" style="width:90%"></div>
+      </div>
+      <div class="skill">
+        <p>Symfony <span class="percentage">65%</span></p>
+        <div class="bar" style="width:80%"></div>
+      </div>
+      <div class="skill">
+        <p>Angular <span class="percentage">70%</span></p>
+        <div class="bar" style="width:70%"></div>
+      </div>
+      <div class="skill">
+        <p>Git <span class="percentage">50%</span></p>
+        <div class="bar" style="width:90%"></div>
+      </div>
+      <div class="skill">
+        <p>Laravel <span class="percentage">55%</span></p>
+        <div class="bar" style="width:85%"></div>
+      </div>
+    </div>
+  </section>
 
-        <section>
-            <h2>Études</h2>
-            <ul>
-                <li>Certificat d’Étude Primaire Élémentaire</li>
-                <li>Brevet d’Étude du Premier Cycle</li>
-                <li>Baccalauréat en Science Générale</li>
-                <li>Licence en Informatique (Génie Logiciel) – En cours d'obtentions</li>
-            </ul>
-        </section> 
-        
-        <section>
-            <h2>Expériences Professionnelles</h2>
-            <ul>
-                <li>8 mois de formation en développement web chez <strong>Nexus Tech</strong></li>
-                <li>5 mois de formation IT chez <strong>Umoja Industry</strong></li>
-                <li>Participation au développement et à la maintenance de projets web</li>
-                <li>Optimisation de l’interface utilisateur et des performances chez Nexus Tech</li>
-            </ul>
-        </section>
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p> Contactez-moi dès maintenant !</p>
+    <a href="mailto:kassexauce@gmail.com" class="btn">Me contacter</a>
+  </section>
 
-        <section>
-            <h2>Langues parlées</h2>
-            <ul>
-                <li>Français</li>
-                <li>Lingala</li>
-            </ul>
-        </section>
-        <section>
-            <h2>À propos de moi</h2>
-            <p>Je suis un développeur passionné par le web, le mobile et les applications qui rapportent. Je combine technique, stratégie et ambition pour créer de la valeur à travers la technologie.</p>
-        </section> 
-          
-    </main>
-
-    <footer>
-        <div class="social-links">
-            <a href="https://www.instagram.com/rock_judicael/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" /></a>
-            <a href="https://www.facebook.com/Exauce Kassongo/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384053.png" alt="Facebook" /></a>
-            <a href="https://www.linkedin.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="LinkedIn" /></a>
-          </div>
-          
-        <p>&copy; 2025 Kass. Tous droits réservés.</p>
-    </footer> 
-</body> 
-</html> 
+  <footer>
+    <div class="social-links">
+      <a href="https://instagram.com/exaucekasongo" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://facebook.com/Saimperfile80" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://linkedin.com/in/exaucekasongo" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>&copy; 2025 Kasongo Badinga Exauce Moïse</p>
+  </footer>
+</body>
+</html>
