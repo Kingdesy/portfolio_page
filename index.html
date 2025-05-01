@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMINGU Gloire | Développeur Créatif</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <!-- Ajout de la bibliothèque GSAP pour des animations avancées -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Préchargeur -->
+    <div class="preloader">
+        <div class="loader">
+            <span class="loader-text">LUMINGU</span>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Curseur personnalisé -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Menu de navigation -->
+    <header class="header">
+        <div class="container">
+            <nav>
+                <div class="logo">LG<span class="highlight">.</span></div>
+                <ul class="nav-links">
+                    <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                    <li><a href="#a-propos" class="nav-link">À Propos</a></li>
+                    <li><a href="#competences" class="nav-link">Compétences</a></li>
+                    <li><a href="#projets" class="nav-link">Projets</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section d'accueil avec effet parallaxe -->
+    <section id="accueil" class="hero">
+        <div class="parallax-bg">
+            <div class="layer" data-depth="0.1"></div>
+            <div class="layer" data-depth="0.2"></div>
+            <div class="layer" data-depth="0.3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="glitch-text" data-text="LUMINGU Gloire">LUMINGU Gloire</h1>
+                    <div class="typewriter">
+                        <h2>Je suis <span class="typed-text"></span><span class="cursor">&nbsp;</span></h2>
+                    </div>
+                    <p class="hero-description">Je transforme des idées en expériences numériques captivantes</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Me Contacter</a>
+                        <a href="#projets" class="btn btn-secondary">Voir Mes Projets</a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://github.com/Mrlgcreative" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/feed/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-image-container">
+                        <div class="profile-image-wrapper">
+                            <img src="./img/profil2.jpg" alt="Photo de LUMINGU Gloire">
+                        </div>
+                        <div class="floating-shapes">
+                            <div class="shape shape-1"></div>
+                            <div class="shape shape-2"></div>
+                            <div class="shape shape-3"></div>
+                            <div class="shape shape-4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="arrow">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos avec animation au défilement -->
+    <section id="a-propos" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Découvrez</span>
+                <h2 class="section-title">À Propos de Moi</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="./img/profil2.jpg" alt="LUMINGU Gloire">
+                        <div class="experience-badge">
+                            <span class="years">2</span>
+                            <span class="text">Années<br>d'expérience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Développeur Web Passionné & Créatif</h3>
+                    <p class="about-description">Je suis un développeur web passionné avec une expertise en création d'applications web modernes et réactives. J'ai travaillé sur divers projets allant des sites vitrines aux applications web complexes.</p>
+                    <p class="about-description">Mon approche combine créativité et rigueur technique pour livrer des solutions qui répondent parfaitement aux besoins des clients tout en offrant une expérience utilisateur exceptionnelle.</p>
+                    <div class="about-details">
+                        <div class="detail-column">
+                            <div class="detail-item">
+                                <i class="fas fa-user"></i>
+                                <div>
+                                    <h4>Nom</h4>
+                                    <p>LUMINGU Gloire</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>gloirelumingu10@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail-column">
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Localisation</h4>
+                                    <p>République Démocratique du Congo</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <h4>Éducation</h4>
+                                    <p>Etudiant en informatique</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-cta">
+                        <a href="#" class="btn btn-primary">Télécharger CV <i class="fas fa-download"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences avec animations interactives -->
+    <section id="competences" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Mes Atouts</span>
+                <h2 class="section-title">Compétences Techniques</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="frontend">Frontend</button>
+                    <button class="tab-btn" data-tab="backend">Backend</button>
+                    <button class="tab-btn" data-tab="other">Autres</button>
+                    <button class="tab-btn" data-tab="tools">Outils</button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="frontend">
+                        <div class="skills-grid">
+                            <div class="skill-card" data-skill="HTML5">
+                                <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                                <div class="skill-info">
+                                    <h4 data-percent="45%">HTML5</h4>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 45%">
+                                            <span class="skill-percent">45%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-card" data-skill="CSS3">
+                                <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                                <div class="skill-info">
+                                    <h4 data-percent="25%">CSS3</h4>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 25%">
+                                            <span class="skill-percent">25%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-card" data-skill="JavaScript">
+                                <div class="skill-icon"><i class="fab fa-js"></i></div>
+                                <div class="skill-info">
+                                    <h4 data-percent="10%">Javascript</h4>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 10%">
+                                            <span class="skill-percent">10%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="backend">
+                        <div class="skills-grid">
+                            <div class="skill-card" data-skill="SQL">
+                                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                                <div class="skill-info">
+                                    <h4 data-percent="45%">SQL</h4>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 45%">
+                                            <span class="skill-percent">45%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-card" data-skill="PHP">
+                                <div class="skill-icon"><i class="fab fa-php"></i></div>
+                                <div class="skill-info">
+                                    <h4 data-percent="20%">PHP</h4>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 20%">
+                                            <span class="skill-percent">20%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="other">
+                        <div class="skills-grid">
+                            <div class="skill-card" data-skill="C++">
+                                <div class="skill-icon"><i class="fas fa-code"></i></div>
+                                <div class="skill-info">
+                                    <h4 data-percent="50%">C++</h4>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 50%">
+                                            <span class="skill-percent">50%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tools">
+                        <div class="skills-grid">
+                            <div class="skill-card" data-skill="Git">
+                                <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                                <div class="skill-info">
+                                    <h4>Git</h4>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 25%">
+                                            <span class="skill-percent">25%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-card" data-skill="IA">
+                                <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                                <div class="skill-info">
+                                    <h4>IA</h4>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 50%">
+                                            <span class="skill-percent">50%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets avec filtres et effets 3D -->
+    <section id="projets" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Mon Travail</span>
+                <h2 class="section-title">Projets Récents</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <div class="project-image">
+                                <img src="./img/projet1.png" alt="Projet E-commerce">
+                                <div class="project-overlay">
+                                    <div class="project-category">Web</div>
+                                    <div class="project-actions">
+                                        <button class="project-details-btn"><i class="fas fa-info-circle"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Projet E-commerce</h3>
+                                <div class="project-tags">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>PHP</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-back">
+                            <h3>Projet E-commerce</h3>
+                            <p>Site e-commerce complet avec panier, paiement et gestion des commandes.</p>
+                            <div class="project-links">
+                                <a href="http://twende.rf.gd/index.php" class="btn btn-small" target="_blank">Voir le Projet</a>
+                                <a href="#" class="btn btn-small btn-outline">Code Source</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="mobile">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <div class="project-image">
+                                <img src="./img/projet2.png" alt="Application web gestion scolaire">
+                                <div class="project-overlay">
+                                    <div class="project-category">Mobile</div>
+                                    <div class="project-actions">
+                                        <button class="project-details-btn"><i class="fas fa-info-circle"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Application Gestion Scolaire</h3>
+                                <div class="project-tags">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>PHP</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-back">
+                            <h3>Application Gestion Scolaire</h3>
+                            <p>Application de suivi d'entraînement et de nutrition pour sportifs.</p>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-small">Voir le Projet</a>
+                                <a href="#" class="btn btn-small btn-outline">En local</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-more">
+                <a href="#" class="btn btn-primary">Voir Plus de Projets</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact avec animations et validation -->
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Restons en contact</span>
+                <h2 class="section-title">Me Contacter</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Adresse</h3>
+                            <p>République Démocratique du Congo</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>gloirelumingu10@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Téléphone</h3>
+                            <p>+243 979 099 031</p>
+                        </div>
+                    </div>
+                    
+                   
+                </div>
+                
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Votre Nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Votre Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Sujet">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Votre Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Envoyer Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <a href="#" class="footer-logo">LG<span class="highlight">.</span></a>
+                    <p class="footer-description">Développeur web passionné, je crée des expériences numériques modernes et captivantes qui répondent aux besoins des clients.</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/Mrlgcreative" target="_blank" class="footer-social-icon"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/feed/" target="_blank" class="footer-social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank" class="footer-social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank" class="footer-social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Liens Rapides</h3>
+                    <ul class="footer-links">
+                        <li><a href="#accueil"><i class="fas fa-chevron-right"></i> Accueil</a></li>
+                        <li><a href="#a-propos"><i class="fas fa-chevron-right"></i> À Propos</a></li>
+                        <li><a href="#competences"><i class="fas fa-chevron-right"></i> Compétences</a></li>
+                        <li><a href="#projets"><i class="fas fa-chevron-right"></i> Projets</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Contact</h3>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="footer-contact-text">
+                            République Démocratique du Congo
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="footer-contact-text">
+                            gloirelumingu10@gmail.com
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="footer-contact-text">
+                            +243 979 099 031
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LUMINGU Gloire. Tous droits réservés. Conçu avec <i class="fas fa-heart" style="color: var(--secondary-color);"></i> par <a href="#">LUMINGU Gloire</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
