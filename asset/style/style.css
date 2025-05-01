@@ -43,7 +43,7 @@ nav {
 }
 
 .MarginSection{
-    margin-top: 10%;
+    margin-top: 20%;
 }
 
 .CardlinkPresent {
@@ -134,7 +134,7 @@ nav {
     margin-left:50px ;
     aspect-ratio: 1;
     background: #2b165d;
-    background-image: url("../asset/jpg.png") ;
+    background-image: url("../jpg.png") ;
     background-size: cover;
     
     border-radius: var(--r);
